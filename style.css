@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+.eater-regular {
+  font-family: "Eater", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 body{
     background-color: black;
@@ -10,13 +15,49 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
 }
 
 .HeroCont{
     display: flex;
     background-color: green;
-    width: 70vh;
-    height: 50vh;
+    width: 75vh;
+    height: 55vh;
     align-items: center;
     flex-direction: column;
+    flex-shrink: 1;
+    min-width: 0;
+    min-height: 0;
+    flex: 1 1 auto;
+}
+
+#Title  {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: Eater, serif;
+}
+
+.FlashingText1{
+    display: flex;
+    justify-content: space-between;
+}
+
+#Flash{
+    animation: blink_smooth 1s infinite;
+}
+
+.FlashingText1 img{
+    width: 10em;
+    height: 10em;
+}
+
+@keyframes blink_smooth{
+    0% {opacity:1}
+    50% {opacity:0;}
+    100% {opacity:1}
+}
+
+.HeroImg img{
+    width: 10em
 }
