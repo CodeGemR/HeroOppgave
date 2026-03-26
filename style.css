@@ -38,26 +38,28 @@ body{
     font-family: Eater, serif;
 }
 
-.FlashingText1{
+.FlashingText1{   
     display: flex;
-    justify-content: space-between;
+    margin-top: 1em;
 }
 
 #Flash{
-    animation: blink_smooth 1s infinite;
+    animation: blinkSmooth 1s infinite;
 }
 
 .FlashingText1 img{
     width: 10em;
-    height: 10em;
+    height: 100%;
 }
 
-@keyframes blink_smooth{
+@keyframes blinkSmooth{
     0% {opacity:1}
     50% {opacity:0;}
     100% {opacity:1}
 }
 
-.HeroImg img{
-    width: 10em
+.transCircles{
+    position: absolute;
+    width: 11em;
+    top: 17.4em;
 }
