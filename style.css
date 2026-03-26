@@ -63,3 +63,9 @@ body{
     width: 11em;
     top: 17.4em;
 }
+
+.bottomHero{
+    display: flex; 
+    justify-content: end;
+    align-items: end;
+}
