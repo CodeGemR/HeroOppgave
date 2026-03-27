@@ -20,11 +20,11 @@ body{
 
 .HeroCont{
     display: flex;
-    background-color: green;
-    width: 75vh;
-    height: 55vh;
-    align-items: center;
+    background-color:white;
     flex-direction: column;
+    align-items: center;
+    width: 80vh;
+    height: 68vh;
     flex-shrink: 1;
     min-width: 0;
     min-height: 0;
@@ -36,11 +36,31 @@ body{
     justify-content: center;
     color: white;
     font-family: Eater, serif;
+    text-shadow: 0 0 5px #fff, 0 0 10px #0f0, 0 0 20px #0f0, 0 0 40px #0f0, 0 0 80px #0f0;
+    animation: radioactive 1.5s infinite alternate;
 }
+@keyframes radioactive{
+    0%,100%{
+        text-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
+    }
+    50%{
+        text-shadow: 0 0 20px #0f0, 0 0 30px #0f0, 0 0 40px #0f0;
+    }
+}
+@keyframes radioactive-box{
+    0%,100%{
+        box-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0;
+    }
+    50%{
+        box-shadow: 0 0 20px #0f0, 0 0 30px #0f0, 0 0 40px #0f0;
+    }
+}
+
 
 .FlashingText1{   
     display: flex;
     margin-top: 1em;
+
 }
 
 #Flash{
@@ -65,7 +85,27 @@ body{
 }
 
 .bottomHero{
-    display: flex; 
-    justify-content: end;
-    align-items: end;
+    display: flex;
+    width: 95%;
+    height:50%;
+    gap: 10%;
+    flex-direction: column;
+}
+
+.radioactiveWords{
+    animation: radioactive 1.5s infinite alternate;
+    text-shadow: 0 0 5px #fff, 0 0 10px #0f0, 0 0 20px #0f0, 0 0 40px #0f0, 0 0 80px #0f0;
+}
+
+#fact1{
+    border: 4px solid #ccff00;
+    animation: radioactive-box 1.5s infinite alternate;
+}
+#fact2{
+    border: 4px solid #ccff00;
+    animation: radioactive-box 1.5s infinite alternate;
+}
+#fact3{
+    border: 4px solid #ccff00;
+    animation: radioactive-box 1.5s infinite alternate;
 }
