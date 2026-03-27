@@ -25,10 +25,6 @@ body{
     align-items: center;
     width: 80vh;
     height: 68vh;
-    flex-shrink: 1;
-    min-width: 0;
-    min-height: 0;
-    flex: 1 1 auto;
 }
 
 #Title  {
@@ -81,7 +77,7 @@ body{
 .transCircles{
     position: absolute;
     width: 11em;
-    top: 17.4em;
+    top: 24%;
 }
 
 .bottomHero{
